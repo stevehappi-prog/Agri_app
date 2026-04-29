@@ -12,7 +12,8 @@ def home():
     return render_template('index.html')
 
 @app.route('/submit', methods=["GET", "POST"])
-def submit():
+def submit_get():
+    return "Utilise le formulaire (POST uniquement)"
     try:
         nom = request.form.get('nom_culture')
         surface = request.form.get('surface')
