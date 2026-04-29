@@ -8,7 +8,7 @@ def get_db():
     return sqlite3.connect('database.db')
 
 @app.route('/')
-def index():
+def home():
     return render_template('index.html')
 
 @app.route('/submit', methods=['POST'])
