@@ -25,7 +25,7 @@ def submit_get():
         c = conn.cursor()
         
         c.execute("""
-              INSERT INTO cultures (nom_culture, surface, quantite, pluie, date) VALUES (?, ?, ?, ?, ?)",
+              INSERT INTO cultures (nom_culture, surface, quantite, pluie, date) VALUES 
               (nom, surface, quantite, pluie, date)
               VALUES (?,?,?,?)
               """, (nom, surface, quantite, pluie, date))
