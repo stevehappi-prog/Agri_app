@@ -14,11 +14,11 @@ def index():
 @app.route('/submit', methods=['POST'])
 def submit():
     try:
-        nom = request.form.get['nom_culture']
-        surface = request.form.get['surface']
-        quantite = request.form.get['quantite']
-        pluie = request.form.get['pluie']
-        date = request.form.get['date']
+        nom = request.form.get('nom_culture')
+        surface = request.form.get('surface')
+        quantite = request.form.get('quantite')
+        pluie = request.form.get('pluie')
+        date = request.form.get('date')
 
         conn = get_db()
         c = conn.cursor()
