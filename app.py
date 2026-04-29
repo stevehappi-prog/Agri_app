@@ -11,7 +11,7 @@ def get_db():
 def home():
     return render_template('index.html')
 
-@app.route('/submit', methods=['POST'])
+@app.route('/submit', methods=["GET", "POST"])
 def submit():
     try:
         nom = request.form.get('nom_culture')
